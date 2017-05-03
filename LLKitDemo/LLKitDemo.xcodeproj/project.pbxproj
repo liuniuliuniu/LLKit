@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D23CCF4A1EB9A5ED00947D0D /* AddClickButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D23CCF491EB9A5ED00947D0D /* AddClickButton.m */; };
+		D23CCF4D1EB9A5F500947D0D /* LLPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D23CCF4C1EB9A5F500947D0D /* LLPlaceholderTextView.m */; };
+		D23CCF501EB9A62B00947D0D /* LLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D23CCF4F1EB9A62B00947D0D /* LLLabel.m */; };
+		D23CCF541EB9D01900947D0D /* LLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23CCF521EB9D01900947D0D /* LLWebViewController.m */; };
+		D23CCF551EB9D01900947D0D /* LLWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23CCF531EB9D01900947D0D /* LLWebViewController.xib */; };
 		D273D9F91EB4430600397599 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D273D9F81EB4430600397599 /* main.m */; };
 		D273D9FC1EB4430600397599 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D273D9FB1EB4430600397599 /* AppDelegate.m */; };
 		D273D9FF1EB4430600397599 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D273D9FE1EB4430600397599 /* ViewController.m */; };
@@ -27,6 +32,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D23CCF481EB9A5ED00947D0D /* AddClickButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddClickButton.h; sourceTree = "<group>"; };
+		D23CCF491EB9A5ED00947D0D /* AddClickButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddClickButton.m; sourceTree = "<group>"; };
+		D23CCF4B1EB9A5F500947D0D /* LLPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLPlaceholderTextView.h; sourceTree = "<group>"; };
+		D23CCF4C1EB9A5F500947D0D /* LLPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLPlaceholderTextView.m; sourceTree = "<group>"; };
+		D23CCF4E1EB9A62B00947D0D /* LLLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLLabel.h; sourceTree = "<group>"; };
+		D23CCF4F1EB9A62B00947D0D /* LLLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLLabel.m; sourceTree = "<group>"; };
+		D23CCF511EB9D01900947D0D /* LLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLWebViewController.h; sourceTree = "<group>"; };
+		D23CCF521EB9D01900947D0D /* LLWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLWebViewController.m; sourceTree = "<group>"; };
+		D23CCF531EB9D01900947D0D /* LLWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLWebViewController.xib; sourceTree = "<group>"; };
 		D273D9F41EB4430600397599 /* LLKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D273D9F81EB4430600397599 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D273D9FA1EB4430600397599 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -97,6 +111,9 @@
 				D273D9FB1EB4430600397599 /* AppDelegate.m */,
 				D273D9FD1EB4430600397599 /* ViewController.h */,
 				D273D9FE1EB4430600397599 /* ViewController.m */,
+				D23CCF511EB9D01900947D0D /* LLWebViewController.h */,
+				D23CCF521EB9D01900947D0D /* LLWebViewController.m */,
+				D23CCF531EB9D01900947D0D /* LLWebViewController.xib */,
 				D273DA001EB4430600397599 /* Main.storyboard */,
 				D273DA031EB4430600397599 /* Assets.xcassets */,
 				D273DA051EB4430600397599 /* LaunchScreen.storyboard */,
@@ -117,6 +134,12 @@
 		D273DA0E1EB4431500397599 /* LLKit */ = {
 			isa = PBXGroup;
 			children = (
+				D23CCF481EB9A5ED00947D0D /* AddClickButton.h */,
+				D23CCF491EB9A5ED00947D0D /* AddClickButton.m */,
+				D23CCF4B1EB9A5F500947D0D /* LLPlaceholderTextView.h */,
+				D23CCF4C1EB9A5F500947D0D /* LLPlaceholderTextView.m */,
+				D23CCF4E1EB9A62B00947D0D /* LLLabel.h */,
+				D23CCF4F1EB9A62B00947D0D /* LLLabel.m */,
 				D273DA0F1EB4431500397599 /* FrameUtils.h */,
 				D273DA101EB4431500397599 /* FrameUtils.m */,
 				D273DA111EB4431500397599 /* LLKit.h */,
@@ -203,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D273DA071EB4430600397599 /* LaunchScreen.storyboard in Resources */,
+				D23CCF551EB9D01900947D0D /* LLWebViewController.xib in Resources */,
 				D273DA041EB4430600397599 /* Assets.xcassets in Resources */,
 				D273DA021EB4430600397599 /* Main.storyboard in Resources */,
 			);
@@ -219,14 +243,18 @@
 				D273DA291EB4431500397599 /* NSDictionary+XJSONString.m in Sources */,
 				D273DA271EB4431500397599 /* NSArray+XJSONString.m in Sources */,
 				D273DA2B1EB4431500397599 /* NSString+MD5.m in Sources */,
+				D23CCF501EB9A62B00947D0D /* LLLabel.m in Sources */,
 				D273D9FC1EB4430600397599 /* AppDelegate.m in Sources */,
 				D273DA2F1EB4431500397599 /* UIView+Frame.m in Sources */,
 				D273DA281EB4431500397599 /* NSDate+String.m in Sources */,
 				D273D9F91EB4430600397599 /* main.m in Sources */,
+				D23CCF541EB9D01900947D0D /* LLWebViewController.m in Sources */,
 				D273DA2D1EB4431500397599 /* UIButton+Block.m in Sources */,
+				D23CCF4A1EB9A5ED00947D0D /* AddClickButton.m in Sources */,
 				D273DA2C1EB4431500397599 /* NSString+URL.m in Sources */,
 				D273DA2E1EB4431500397599 /* UIImage+Color.m in Sources */,
 				D273DA261EB4431500397599 /* FrameUtils.m in Sources */,
+				D23CCF4D1EB9A5F500947D0D /* LLPlaceholderTextView.m in Sources */,
 				D273DA301EB4431500397599 /* UIView+FrameUtils.m in Sources */,
 				D273DA2A1EB4431500397599 /* NSString+Extension.m in Sources */,
 			);
@@ -385,6 +413,7 @@
 				D273DA0D1EB4430600397599 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
