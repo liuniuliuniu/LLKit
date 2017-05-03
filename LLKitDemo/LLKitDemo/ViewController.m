@@ -7,12 +7,17 @@
 //
 
 #import "ViewController.h"
-#import "LLWebViewController.h"
 #import "LLKit.h"
+#import "LLLabelViewController.h"
+#import "LLPlaceHodelTextViewVC.h"
 
-@interface ViewController ()<LLLabelDelegate>
 
-@property (weak, nonatomic) IBOutlet LLLabel *textLabel;
+static NSString *cellID = @"cellID";
+
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 
 @end
 
@@ -20,75 +25,54 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-//    [self btnDemo];
-    [self lableDemo];
 
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.rowHeight = 100;
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
+    
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 2;
 }
 
-- (void)lableDemo{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
     
-    self.textLabel.text = @"#豆姐在现场# @杨幂: 纽约[飞机]上海到达。女王荣耀归来！ 微博链接：http://weibo.com/yangmiblog?refer_flag=1001030101_, 协议《一二一》 ,杨幂专属定制 杨幂驾到";
-    // 非匹配内容文字颜色
-    self.textLabel.LL_commonTextColor = [UIColor darkGrayColor];
+    switch (indexPath.row) {
+        case 0:
+            cell.textLabel.text = @"LLLabel";
+            break;
+        case 1:
+            cell.textLabel.text = @"LLPlaceholderTextView";
+            break;
+        default:
+            break;
+    }
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    // 点选高亮颜色
-    self.textLabel.LL_textHightLightBackGroundColor = [UIColor lightGrayColor];
-    
-    // 匹配用户名
-    [self.textLabel setHightLightTextColor:[UIColor orangeColor] forHandleStyle:HandleStyleUser];
-    // 匹配标题
-    [self.textLabel setHightLightTextColor:[UIColor yellowColor] forHandleStyle:HandleStyleTopic];
-    // 匹配链接
-    [self.textLabel setHightLightTextColor:[UIColor purpleColor] forHandleStyle:HandleStyleLink];
-    
-    [self.textLabel setHightLightTextColor:[UIColor greenColor] forHandleStyle:HandleStyleAgreement];
-    
-    
-    // 自定义的文字
-    self.textLabel.LL_matchArr = @[
-                                   @{
-                                   @"string":@"高亮显示",
-                                   @"color":[UIColor magentaColor]
-                                   }
-                                   ];
-    
-    // block 打印的字符串
-    self.textLabel.LL_tapOperation = ^(UILabel * label, HandleStyle style, NSString * selectedString, NSRange range) {
-        
-        NSLog(@"selectedString--%@",selectedString);
-        
-        
-        if (style == HandleStyleLink) {
-            LLWebViewController *webVC = [LLWebViewController new];
-            webVC.urlString = selectedString;
-            [self.navigationController pushViewController:webVC animated:YES];
+    switch (indexPath.row) {
+        case 0:{
+            UIStoryboard *sboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            LLLabelViewController *LabelVC = [sboard instantiateViewControllerWithIdentifier:@"label"];
+            [self.navigationController pushViewController:LabelVC animated:YES];
         }
-        
-        
-    };
-    
-    self.textLabel.delegate = self;
-
-}
-
-
-#pragma LLLabelDelegate
-- (void)LL_label:(LLLabel *)label didSelectedString:(NSString *)selectedStr forStyle:(HandleStyle)style inRange:(NSRange)range{
-    NSLog(@"代理打印的字符串----%@",selectedStr);
-}
+            break;
+        case 1:{
+            LLPlaceHodelTextViewVC *textVC = [LLPlaceHodelTextViewVC new];
+            [self.navigationController pushViewController:textVC animated:YES];                    
+        }
+            break;
+        default:
+            break;
+    }
 
 
-
-- (void)btnDemo{
-    // 仅仅对一个分类进行了演示  可以源文件参考其他类的使用
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
-    btn.center = self.view.center;
-    [self.view addSubview:btn];
-    [btn addTargetControlEvent:UIControlEventTouchUpInside actionBlock:^{
-        NSLog(@"按钮被点击了");
-    }];
 }
 
 

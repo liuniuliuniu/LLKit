@@ -12,6 +12,9 @@
 		D23CCF501EB9A62B00947D0D /* LLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D23CCF4F1EB9A62B00947D0D /* LLLabel.m */; };
 		D23CCF541EB9D01900947D0D /* LLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23CCF521EB9D01900947D0D /* LLWebViewController.m */; };
 		D23CCF551EB9D01900947D0D /* LLWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23CCF531EB9D01900947D0D /* LLWebViewController.xib */; };
+		D23CCF581EB9DCBE00947D0D /* LLLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23CCF571EB9DCBE00947D0D /* LLLabelViewController.m */; };
+		D23CCF5C1EB9E2A600947D0D /* LLPlaceHodelTextViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D23CCF5A1EB9E2A600947D0D /* LLPlaceHodelTextViewVC.m */; };
+		D23CCF5D1EB9E2A600947D0D /* LLPlaceHodelTextViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23CCF5B1EB9E2A600947D0D /* LLPlaceHodelTextViewVC.xib */; };
 		D273D9F91EB4430600397599 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D273D9F81EB4430600397599 /* main.m */; };
 		D273D9FC1EB4430600397599 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D273D9FB1EB4430600397599 /* AppDelegate.m */; };
 		D273D9FF1EB4430600397599 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D273D9FE1EB4430600397599 /* ViewController.m */; };
@@ -41,6 +44,11 @@
 		D23CCF511EB9D01900947D0D /* LLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLWebViewController.h; sourceTree = "<group>"; };
 		D23CCF521EB9D01900947D0D /* LLWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLWebViewController.m; sourceTree = "<group>"; };
 		D23CCF531EB9D01900947D0D /* LLWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLWebViewController.xib; sourceTree = "<group>"; };
+		D23CCF561EB9DCBE00947D0D /* LLLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLLabelViewController.h; sourceTree = "<group>"; };
+		D23CCF571EB9DCBE00947D0D /* LLLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLLabelViewController.m; sourceTree = "<group>"; };
+		D23CCF591EB9E2A600947D0D /* LLPlaceHodelTextViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLPlaceHodelTextViewVC.h; sourceTree = "<group>"; };
+		D23CCF5A1EB9E2A600947D0D /* LLPlaceHodelTextViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLPlaceHodelTextViewVC.m; sourceTree = "<group>"; };
+		D23CCF5B1EB9E2A600947D0D /* LLPlaceHodelTextViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLPlaceHodelTextViewVC.xib; sourceTree = "<group>"; };
 		D273D9F41EB4430600397599 /* LLKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D273D9F81EB4430600397599 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D273D9FA1EB4430600397599 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +119,11 @@
 				D273D9FB1EB4430600397599 /* AppDelegate.m */,
 				D273D9FD1EB4430600397599 /* ViewController.h */,
 				D273D9FE1EB4430600397599 /* ViewController.m */,
+				D23CCF561EB9DCBE00947D0D /* LLLabelViewController.h */,
+				D23CCF571EB9DCBE00947D0D /* LLLabelViewController.m */,
+				D23CCF591EB9E2A600947D0D /* LLPlaceHodelTextViewVC.h */,
+				D23CCF5A1EB9E2A600947D0D /* LLPlaceHodelTextViewVC.m */,
+				D23CCF5B1EB9E2A600947D0D /* LLPlaceHodelTextViewVC.xib */,
 				D23CCF511EB9D01900947D0D /* LLWebViewController.h */,
 				D23CCF521EB9D01900947D0D /* LLWebViewController.m */,
 				D23CCF531EB9D01900947D0D /* LLWebViewController.xib */,
@@ -227,6 +240,7 @@
 			files = (
 				D273DA071EB4430600397599 /* LaunchScreen.storyboard in Resources */,
 				D23CCF551EB9D01900947D0D /* LLWebViewController.xib in Resources */,
+				D23CCF5D1EB9E2A600947D0D /* LLPlaceHodelTextViewVC.xib in Resources */,
 				D273DA041EB4430600397599 /* Assets.xcassets in Resources */,
 				D273DA021EB4430600397599 /* Main.storyboard in Resources */,
 			);
@@ -249,8 +263,10 @@
 				D273DA281EB4431500397599 /* NSDate+String.m in Sources */,
 				D273D9F91EB4430600397599 /* main.m in Sources */,
 				D23CCF541EB9D01900947D0D /* LLWebViewController.m in Sources */,
+				D23CCF581EB9DCBE00947D0D /* LLLabelViewController.m in Sources */,
 				D273DA2D1EB4431500397599 /* UIButton+Block.m in Sources */,
 				D23CCF4A1EB9A5ED00947D0D /* AddClickButton.m in Sources */,
+				D23CCF5C1EB9E2A600947D0D /* LLPlaceHodelTextViewVC.m in Sources */,
 				D273DA2C1EB4431500397599 /* NSString+URL.m in Sources */,
 				D273DA2E1EB4431500397599 /* UIImage+Color.m in Sources */,
 				D273DA261EB4431500397599 /* FrameUtils.m in Sources */,

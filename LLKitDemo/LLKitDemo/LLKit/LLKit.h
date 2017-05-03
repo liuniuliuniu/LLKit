@@ -20,6 +20,8 @@
 #import "UIView+Frame.h"
 #import "UIView+FrameUtils.h"
 #import "LLLabel.h"
+#import "LLPlaceholderTextView.h"
+#import "AddClickButton.h"
 
 
 #endif /* LFBTools_h */
