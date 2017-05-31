@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LLKit_Example' do
+  pod 'LLKit', :path => '../'
+
+  target 'LLKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
