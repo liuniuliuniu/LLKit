@@ -10,6 +10,7 @@
 
 @interface UIImage (Color)
 
+// 用颜色绘制成图片
 + (UIImage*)createImageWithColor:(UIColor*) color;
 
 @end

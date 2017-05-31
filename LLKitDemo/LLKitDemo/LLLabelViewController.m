@@ -18,6 +18,13 @@
 
 @implementation LLLabelViewController
 
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    NSLog(@"+++");
+
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

@@ -2,8 +2,8 @@
 //  AddClickButton.h
 //  MVC
 //
-//  Created by 张坤 on 2017/3/24.
-//  Copyright © 2017年 zhangkun. All rights reserved.
+//  Created by 大影象科技 on 2017/4/28.
+//  Copyright © 2017年 liushaohua. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

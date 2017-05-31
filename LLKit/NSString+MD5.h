@@ -10,6 +10,8 @@
 
 @interface NSString (MD5)
 
+
+// 类方法 字符串转换成MD5
 + (NSString *)md5:(NSString *)str;
 - (NSString *)stringMd5;
 

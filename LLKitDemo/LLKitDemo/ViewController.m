@@ -10,6 +10,7 @@
 #import "LLKit.h"
 #import "LLLabelViewController.h"
 #import "LLPlaceHodelTextViewVC.h"
+#import "UIAlertViewController.h"
 
 
 static NSString *cellID = @"cellID";
@@ -23,6 +24,13 @@ static NSString *cellID = @"cellID";
 
 @implementation ViewController
 
+
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    NSLog(@"---");
+
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -34,7 +42,7 @@ static NSString *cellID = @"cellID";
     
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 2;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -48,6 +56,10 @@ static NSString *cellID = @"cellID";
         case 1:
             cell.textLabel.text = @"LLPlaceholderTextView";
             break;
+        case 2:
+            cell.textLabel.text = @"UIAlertViewController";
+            break;
+
         default:
             break;
     }
@@ -68,6 +80,12 @@ static NSString *cellID = @"cellID";
             [self.navigationController pushViewController:textVC animated:YES];                    
         }
             break;
+        case 2:
+        {
+            UIAlertViewController *vc = [UIAlertViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+            
+        }
         default:
             break;
     }
