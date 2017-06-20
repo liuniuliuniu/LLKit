@@ -8,33 +8,57 @@
 
 #import "LLPlaceholderTextView.h"
 
-@implementation LLPlaceholderTextView
+@interface LLPlaceholderTextView ()
+
+/**
+ 占位的lable
+ */
+@property (nonatomic, strong) UILabel * placeHolderLabel;
+
+@end
+
+
+@implementation LLPlaceholderTextView{
+
+    // 默认的高度
+    CGRect defaultFrame;
+    // 变化的高度
+    CGRect changeFrame;
+}
+
 
 -(instancetype)initWithFrame:(CGRect)frame{
     
     if (self = [super initWithFrame:frame]) {
-        
-        [self setPlaceholder:@""];
-        
-        [self setPlaceholderColor:[UIColor lightGrayColor]];
-        
+                
+        self.placeholderString = @"请输入";
+        self.placeholderColor = [UIColor lightGrayColor];
+        self.isChangeHeight = NO;
         self.layer.borderColor = [UIColor darkGrayColor].CGColor;
         self.layer.borderWidth = 0.5;
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChanged:) name:UITextViewTextDidChangeNotification object:nil];
-        
     }
     
     return self;
 }
 
+- (void)layoutSubviews{
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        defaultFrame = self.frame;
+        changeFrame = self.frame;
+    });
+}
+
 
 // 设置占位符的文字
--(void)setPlaceholder:(NSString *)placeholder{
+- (void)setPlaceholderString:(NSString *)placeholderString{
     
-    if (_placeholder != placeholder) {
+    if (_placeholderString != placeholderString) {
         
-        _placeholder = placeholder;
+        _placeholderString = placeholderString;
         
         [self.placeHolderLabel removeFromSuperview];
         
@@ -42,23 +66,12 @@
         
         [self setNeedsDisplay];
         
-        
     }
 }
 
-//- (UILabel *)titleLabel
-//{
-//    if (!_titleLabel) {
-//        _titleLabel = [[UILabel alloc] init];
-//        _titleLabel.textColor = [UIColor whiteColor];
-//        _titleLabel.font = [UIFont systemFontOfSize:15.0];
-//    }
-//    return _titleLabel;
-//}
-
 - (void)textChanged:(NSNotification *)notification{
     
-    if ([[self placeholder] length] == 0) {
+    if ([[self placeholderString] length] == 0) {
         return;
     }
     
@@ -67,17 +80,29 @@
     }
     
     else{
-        
         [[self viewWithTag:999] setAlpha:0];
     }
     
+    
+    if (_isChangeHeight) {
+        CGFloat labelHeight = self.contentSize.height;
+        CGFloat count = labelHeight / self.font.lineHeight;
+        CGFloat changeHeight = count * self.font.lineHeight;
+        changeFrame.size.height = changeHeight;
+        if (changeHeight < defaultFrame.size.height) {
+            self.frame = defaultFrame;
+        }else{
+            self.frame = changeFrame;
+        }
+    }
+
 }
 
 -(void)drawRect:(CGRect)rect{
     
     [super drawRect:rect];
     
-    if ([[self placeholder] length] > 0) {
+    if ([[self placeholderString] length] > 0) {
         if (_placeHolderLabel == nil) {
             _placeHolderLabel = [[UILabel alloc]initWithFrame:CGRectMake(8, 8, self.bounds.size.width - 16, 0)];
             _placeHolderLabel.lineBreakMode = NSLineBreakByWordWrapping;
@@ -89,15 +114,13 @@
             _placeHolderLabel.tag = 999;
             [self addSubview:_placeHolderLabel];
         }
-        _placeHolderLabel.text = self.placeholder;
+        _placeHolderLabel.text = self.placeholderString;
         [_placeHolderLabel sizeToFit];
         [self sendSubviewToBack:_placeHolderLabel];
     }
     
-    if ([[self text] length] == 0 && [[self placeholder] length] >0) {
-        
-        [[self viewWithTag:999] setAlpha:1.0];
-        
+    if ([[self text] length] == 0 && [[self placeholderString] length] >0) {
+        [[self viewWithTag:999] setAlpha:1.0];        
     }
     
 }

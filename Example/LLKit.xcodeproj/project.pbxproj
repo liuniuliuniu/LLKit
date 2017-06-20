@@ -23,6 +23,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		898BCC6D0EFEA4D3E7472140 /* Pods_LLKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834754F760D8C41988D018B2 /* Pods_LLKit_Example.framework */; };
+		D2FB6A571EF95A9300B537AD /* LLLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FB6A561EF95A9300B537AD /* LLLabelViewController.m */; };
+		D2FB6A5A1EF95E5B00B537AD /* LLPlaceHodelTextViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FB6A591EF95E5B00B537AD /* LLPlaceHodelTextViewVC.m */; };
 		EEF6D5421EF3C7FF1F66D8A3 /* Pods_LLKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1353E8B0643FD1EF0FDF9E60 /* Pods_LLKit_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +41,7 @@
 /* Begin PBXFileReference section */
 		1353E8B0643FD1EF0FDF9E60 /* Pods_LLKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2293CE7C367A6A604E441AB6 /* Pods-LLKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLKit_Tests/Pods-LLKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		27EFFCEE538ECE8814A4A6CC /* LLKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LLKit.podspec; path = ../LLKit.podspec; sourceTree = "<group>"; };
+		27EFFCEE538ECE8814A4A6CC /* LLKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LLKit.podspec; path = ../LLKit.podspec; sourceTree = "<group>"; };
 		42C6E767F61ECEFCFD6DD7D6 /* Pods-LLKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLKit_Example/Pods-LLKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LLKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,10 +65,14 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		834754F760D8C41988D018B2 /* Pods_LLKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8CBEFB876DD6DCA4D6049C7B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8CBEFB876DD6DCA4D6049C7B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B9AC73E79D998FC300EFCF55 /* Pods-LLKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLKit_Example/Pods-LLKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CC7B28A38661F36B1FB16FCF /* Pods-LLKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLKit_Tests/Pods-LLKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		CEEA01B994E85995D039AE6C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CEEA01B994E85995D039AE6C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D2FB6A551EF95A9300B537AD /* LLLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLLabelViewController.h; sourceTree = "<group>"; };
+		D2FB6A561EF95A9300B537AD /* LLLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLLabelViewController.m; sourceTree = "<group>"; };
+		D2FB6A581EF95E5B00B537AD /* LLPlaceHodelTextViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLPlaceHodelTextViewVC.h; sourceTree = "<group>"; };
+		D2FB6A591EF95E5B00B537AD /* LLPlaceHodelTextViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLPlaceHodelTextViewVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,10 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* LLViewController.h */,
 				6003F5A6195388D20070C39A /* LLViewController.m */,
+				D2FB6A551EF95A9300B537AD /* LLLabelViewController.h */,
+				D2FB6A561EF95A9300B537AD /* LLLabelViewController.m */,
+				D2FB6A581EF95E5B00B537AD /* LLPlaceHodelTextViewVC.h */,
+				D2FB6A591EF95E5B00B537AD /* LLPlaceHodelTextViewVC.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -395,7 +405,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* LLAppDelegate.m in Sources */,
+				D2FB6A571EF95A9300B537AD /* LLLabelViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* LLViewController.m in Sources */,
+				D2FB6A5A1EF95E5B00B537AD /* LLPlaceHodelTextViewVC.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

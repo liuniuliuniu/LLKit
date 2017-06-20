@@ -8,34 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface LLPlaceholderTextView : UITextView
 
-
 /**
- 占位的lable
+ 占位的字符串 default is 请输入
  */
-@property (nonatomic, strong) UILabel * placeHolderLabel;
+@property (nonatomic, copy) NSString * placeholderString;
 
 /**
- 占位的字符串
- */
-@property (nonatomic, copy) NSString * placeholder;
-
-/**
- 占位符的颜色
+ 占位符的颜色 default is darkGrayColor
  */
 @property (nonatomic, strong) UIColor * placeholderColor;
 
-
 /**
- 边框
+ 动态更改高度 default is NO
  */
-@property(nonatomic, strong)UIView *lineView;
-
-/**
- 文字改变的颜色
- */
-
-- (void)textChanged:(NSNotification * )notification;
+@property (nonatomic,assign) BOOL isChangeHeight;
 
 @end

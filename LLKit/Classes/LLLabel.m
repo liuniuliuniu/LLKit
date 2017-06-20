@@ -493,7 +493,7 @@ static NSString *LLColor = @"llcolor";
         NSValue *value = [NSValue valueWithBytes:&range objCType:@encode(NSRange)];
         NSMutableDictionary *aDictM = [NSMutableDictionary dictionary];
         aDictM[LLRange] = value;
-        aDictM[LLRange] = color;
+        aDictM[LLColor] = color;
         [arrM addObject:[aDictM copy]];
     }
     
