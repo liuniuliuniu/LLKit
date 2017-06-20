@@ -24,17 +24,17 @@
 
 ## <a id="Architecture"></a>结构层次
 
-* AddClickButton
-
 >本类用户扩大按钮的点击区域，按照官方建议不小于44 point
 
-* LLLabel
+* AddClickButton
 
 >本类用于实现富文本
 
-* LLPlaceholderTextView
+* LLLabel
 
 >本类用于自定义TextView 添加placeholderString 并能动态根据文本更改高度
+
+* LLPlaceholderTextView
 
 
 
