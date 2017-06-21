@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/LLKit.svg?style=flat)](http://cocoapods.org/pods/LLKit)
 [![Platform](https://img.shields.io/cocoapods/p/LLKit.svg?style=flat)](http://cocoapods.org/pods/LLKit)
 
+
+![LLPhotoBrowserAnim.gif](https://github.com/liuniuliuniu/LLKit/blob/master/LLKit.gif)
+
+
 ## 导航
 
 * [基本要求](#Requirements)
