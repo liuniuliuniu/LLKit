@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1490401052C8192BDB8FDEBCF4E3426B /* LLKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8251E7F20501FA8BF0AC5396F4C0AA15 /* LLKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31A460C7E43364F164BEA08D6D595B34 /* LLLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = FF6139B815963B0A60BD722061697CBF /* LLLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F80C4276FAB437B1FDC9C2E69515B91 /* AddClickButton.h in Headers */ = {isa = PBXBuildFile; fileRef = D8DFC67C3BC3D7BF0D8EBC5A598C7A48 /* AddClickButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F80C4276FAB437B1FDC9C2E69515B91 /* LLClickButton.h in Headers */ = {isa = PBXBuildFile; fileRef = D8DFC67C3BC3D7BF0D8EBC5A598C7A48 /* LLClickButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50DDAFB0737FEF23AC2BEC04AF60577C /* Pods-LLKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D837913B10FCD2F28A3472BB132CA2 /* Pods-LLKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		624D383DAABCA96F76F07DC8D41492EF /* Pods-LLKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B534ACB0E9BD42F210CEA215F182BF57 /* Pods-LLKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6506FEE6DCF2CDD930E89A249CF5C33B /* Pods-LLKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D0DDD0EA7058BCA1ED3218E48F2E84 /* Pods-LLKit_Example-dummy.m */; };
@@ -21,7 +21,7 @@
 		BFFA1FE00A4F3C76773D337A3895BC84 /* LLKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6AD93EDF6BC3FD4B8E1DA1AEFED9D /* LLKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D64C7C7F1E161A671936E22EAC12F5B5 /* LLPlaceholderTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 85FB40AEE4DF3A86ECA903BF43A66EE2 /* LLPlaceholderTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E02678ECC5268E82D5BF814EB32DDF92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		E08EE347B65FC261B67E4D2802F06F9C /* AddClickButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 85302DFA5A464F2A5A881001574D931C /* AddClickButton.m */; };
+		E08EE347B65FC261B67E4D2802F06F9C /* LLClickButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 85302DFA5A464F2A5A881001574D931C /* LLClickButton.m */; };
 		F6684054D2E6CD0075CE07C0E301BD65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,10 +37,10 @@
 
 /* Begin PBXFileReference section */
 		109E2CEA06C36127404F8DFDEDB1E8C9 /* LLPlaceholderTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LLPlaceholderTextView.m; sourceTree = "<group>"; };
-		1DFB7E2B6B3053A5DA1DFC1DC6732057 /* LLKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LLKit.framework; path = LLKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DFB7E2B6B3053A5DA1DFC1DC6732057 /* LLKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LLKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E026342DDA439B9ADDE330DF69C5A8C /* LLKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LLKit.xcconfig; sourceTree = "<group>"; };
 		24416C45381FD7DC5E208FC5A09E8A9F /* Pods-LLKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LLKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2880AF6CE4B71EE96DB21E93C030AE5D /* Pods_LLKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LLKit_Tests.framework; path = "Pods-LLKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2880AF6CE4B71EE96DB21E93C030AE5D /* Pods_LLKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		305ACA1E4612692453F5DAA4287B2A50 /* Pods-LLKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LLKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3EE7AACFEB8BDBF77D7B7E3C3FB89158 /* LLKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LLKit-prefix.pch"; sourceTree = "<group>"; };
 		4348ECC4A83D40C9B03CBD0AC93E0F2A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,18 +48,18 @@
 		4FD6AD93EDF6BC3FD4B8E1DA1AEFED9D /* LLKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LLKit.h; sourceTree = "<group>"; };
 		511E0F6857DB9CD9550C8C9404C4D888 /* Pods-LLKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LLKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		53D52833D66EC1D77431DB7D98806333 /* Pods-LLKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LLKit_Example-resources.sh"; sourceTree = "<group>"; };
-		55DDFAF7B8B50A4BD732D183101DA217 /* Pods_LLKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LLKit_Example.framework; path = "Pods-LLKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55DDFAF7B8B50A4BD732D183101DA217 /* Pods_LLKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57809B7D4C9A9C05EB6B83D0FC730600 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6310200474A1D02DFEA4881E4D17505E /* Pods-LLKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LLKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		67E5D8045B500B1E930FDA4F95CCBD8B /* Pods-LLKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LLKit_Tests.modulemap"; sourceTree = "<group>"; };
-		6C8597D23B9BEEA586D6B5E6B04792CB /* Pods-LLKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LLKit_Example.modulemap"; sourceTree = "<group>"; };
-		6F6A8E08AC0E5FF9BF8971503A54C56A /* LLKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LLKit.modulemap; sourceTree = "<group>"; };
+		67E5D8045B500B1E930FDA4F95CCBD8B /* Pods-LLKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LLKit_Tests.modulemap"; sourceTree = "<group>"; };
+		6C8597D23B9BEEA586D6B5E6B04792CB /* Pods-LLKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LLKit_Example.modulemap"; sourceTree = "<group>"; };
+		6F6A8E08AC0E5FF9BF8971503A54C56A /* LLKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LLKit.modulemap; sourceTree = "<group>"; };
 		824737413D87254A716325808197A2A2 /* Pods-LLKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LLKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8251E7F20501FA8BF0AC5396F4C0AA15 /* LLKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LLKit-umbrella.h"; sourceTree = "<group>"; };
-		85302DFA5A464F2A5A881001574D931C /* AddClickButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AddClickButton.m; sourceTree = "<group>"; };
+		85302DFA5A464F2A5A881001574D931C /* LLClickButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LLClickButton.m; sourceTree = "<group>"; };
 		85FB40AEE4DF3A86ECA903BF43A66EE2 /* LLPlaceholderTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LLPlaceholderTextView.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F6160BA9296CAF1D37DDB69FF4818DC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5D59F022990EF46A3EED77ED98AE5DD /* Pods-LLKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LLKit_Tests-resources.sh"; sourceTree = "<group>"; };
 		B19DC1CD728C1CDFB18D8272DBB9C3EB /* LLLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LLLabel.m; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 		CD9E3256CAF95E75E2FFE81946141340 /* Pods-LLKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LLKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D52EE9B58507072417C2A3B07BDDA152 /* Pods-LLKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LLKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		D67C484C316484D6386EE5241784EBB0 /* Pods-LLKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LLKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D8DFC67C3BC3D7BF0D8EBC5A598C7A48 /* AddClickButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AddClickButton.h; sourceTree = "<group>"; };
+		D8DFC67C3BC3D7BF0D8EBC5A598C7A48 /* LLClickButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LLClickButton.h; sourceTree = "<group>"; };
 		D976C958DDF9AA9D558874B7D06977D7 /* Pods-LLKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LLKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F1444A55E2274F38E96006D73AA67CB5 /* Pods-LLKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LLKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		FF2F1827690D7D2F23EB909D873879E6 /* Pods-LLKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LLKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -174,7 +174,6 @@
 			children = (
 				B27225DEE8C8C474887378C6E843F85B /* Classes */,
 			);
-			name = LLKit;
 			path = LLKit;
 			sourceTree = "<group>";
 		};
@@ -200,15 +199,14 @@
 		B27225DEE8C8C474887378C6E843F85B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D8DFC67C3BC3D7BF0D8EBC5A598C7A48 /* AddClickButton.h */,
-				85302DFA5A464F2A5A881001574D931C /* AddClickButton.m */,
+				D8DFC67C3BC3D7BF0D8EBC5A598C7A48 /* LLClickButton.h */,
+				85302DFA5A464F2A5A881001574D931C /* LLClickButton.m */,
 				4FD6AD93EDF6BC3FD4B8E1DA1AEFED9D /* LLKit.h */,
 				FF6139B815963B0A60BD722061697CBF /* LLLabel.h */,
 				B19DC1CD728C1CDFB18D8272DBB9C3EB /* LLLabel.m */,
 				85FB40AEE4DF3A86ECA903BF43A66EE2 /* LLPlaceholderTextView.h */,
 				109E2CEA06C36127404F8DFDEDB1E8C9 /* LLPlaceholderTextView.m */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -257,7 +255,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F80C4276FAB437B1FDC9C2E69515B91 /* AddClickButton.h in Headers */,
+				3F80C4276FAB437B1FDC9C2E69515B91 /* LLClickButton.h in Headers */,
 				1490401052C8192BDB8FDEBCF4E3426B /* LLKit-umbrella.h in Headers */,
 				BFFA1FE00A4F3C76773D337A3895BC84 /* LLKit.h in Headers */,
 				31A460C7E43364F164BEA08D6D595B34 /* LLLabel.h in Headers */,
@@ -377,7 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E08EE347B65FC261B67E4D2802F06F9C /* AddClickButton.m in Sources */,
+				E08EE347B65FC261B67E4D2802F06F9C /* LLClickButton.m in Sources */,
 				7CF58873B8EAA999C5F1829F1B033E05 /* LLKit-dummy.m in Sources */,
 				8F7121861974FB02388A820C0E7FD646 /* LLLabel.m in Sources */,
 				7282DB04BD30C95D6AE8780E8264A6DF /* LLPlaceholderTextView.m in Sources */,

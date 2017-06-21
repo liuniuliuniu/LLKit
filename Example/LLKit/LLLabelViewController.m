@@ -47,8 +47,7 @@
                                        @"color":[UIColor magentaColor]
                                        }
                                    ];
-    
-    
+        
     // block 打印的字符串
     self.textLabel.LL_tapOperation = ^(UILabel * label, HandleStyle style, NSString * selectedString, NSRange range) {
         

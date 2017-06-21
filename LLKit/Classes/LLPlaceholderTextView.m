@@ -2,8 +2,8 @@
 //  LLPlaceholderTextView.m
 //  LLProgramFramework
 //
-//  Created by 大影象科技 on 2017/4/28.
-//  Copyright © 2017年 liushaohua. All rights reserved.
+//  Created by liushaohua on 2016/10/28.
+//  Copyright © 2016年 liushaohua. All rights reserved.
 //
 
 #import "LLPlaceholderTextView.h"
@@ -89,6 +89,7 @@
         CGFloat count = labelHeight / self.font.lineHeight;
         CGFloat changeHeight = count * self.font.lineHeight;
         changeFrame.size.height = changeHeight;
+        
         if (changeHeight < defaultFrame.size.height) {
             self.frame = defaultFrame;
         }else{

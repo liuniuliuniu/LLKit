@@ -2,7 +2,7 @@
 //  DYXTools.h
 //
 //
-//  Created by liushaohua on 16/10/11.
+//  Created by liushaohua on 2016/10/28.
 //  Copyright © 2016年 liushaohua. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 #define LFBTools_h
 
 #import "LLLabel.h"
-#import "AddClickButton.h"
+#import "LLClickButton.h"
 #import "LLPlaceholderTextView.h"
 
 
