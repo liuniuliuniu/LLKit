@@ -23,6 +23,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		898BCC6D0EFEA4D3E7472140 /* Pods_LLKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834754F760D8C41988D018B2 /* Pods_LLKit_Example.framework */; };
+		D2E1DBA01EFA3933001662AD /* LLAlertAnimVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E1DB9F1EFA3933001662AD /* LLAlertAnimVC.m */; };
 		D2FB6A571EF95A9300B537AD /* LLLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FB6A561EF95A9300B537AD /* LLLabelViewController.m */; };
 		D2FB6A5A1EF95E5B00B537AD /* LLPlaceHodelTextViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FB6A591EF95E5B00B537AD /* LLPlaceHodelTextViewVC.m */; };
 		EEF6D5421EF3C7FF1F66D8A3 /* Pods_LLKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1353E8B0643FD1EF0FDF9E60 /* Pods_LLKit_Tests.framework */; };
@@ -69,6 +70,8 @@
 		B9AC73E79D998FC300EFCF55 /* Pods-LLKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLKit_Example/Pods-LLKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CC7B28A38661F36B1FB16FCF /* Pods-LLKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLKit_Tests/Pods-LLKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CEEA01B994E85995D039AE6C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D2E1DB9E1EFA3933001662AD /* LLAlertAnimVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLAlertAnimVC.h; sourceTree = "<group>"; };
+		D2E1DB9F1EFA3933001662AD /* LLAlertAnimVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLAlertAnimVC.m; sourceTree = "<group>"; };
 		D2FB6A551EF95A9300B537AD /* LLLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLLabelViewController.h; sourceTree = "<group>"; };
 		D2FB6A561EF95A9300B537AD /* LLLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLLabelViewController.m; sourceTree = "<group>"; };
 		D2FB6A581EF95E5B00B537AD /* LLPlaceHodelTextViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLPlaceHodelTextViewVC.h; sourceTree = "<group>"; };
@@ -147,6 +150,8 @@
 				D2FB6A561EF95A9300B537AD /* LLLabelViewController.m */,
 				D2FB6A581EF95E5B00B537AD /* LLPlaceHodelTextViewVC.h */,
 				D2FB6A591EF95E5B00B537AD /* LLPlaceHodelTextViewVC.m */,
+				D2E1DB9E1EFA3933001662AD /* LLAlertAnimVC.h */,
+				D2E1DB9F1EFA3933001662AD /* LLAlertAnimVC.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -404,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2E1DBA01EFA3933001662AD /* LLAlertAnimVC.m in Sources */,
 				6003F59E195388D20070C39A /* LLAppDelegate.m in Sources */,
 				D2FB6A571EF95A9300B537AD /* LLLabelViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* LLViewController.m in Sources */,

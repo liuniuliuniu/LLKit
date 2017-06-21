@@ -5,7 +5,6 @@
 [![License](https://img.shields.io/cocoapods/l/LLKit.svg?style=flat)](http://cocoapods.org/pods/LLKit)
 [![Platform](https://img.shields.io/cocoapods/p/LLKit.svg?style=flat)](http://cocoapods.org/pods/LLKit)
 
-
 ## 导航
 
 * [基本要求](#Requirements)
@@ -29,12 +28,9 @@
 * AddClickButton
 
 
-
-
 >本类用于实现富文本
 
 * LLLabel
-
 
 
 
@@ -43,8 +39,16 @@
 * LLPlaceholderTextView
 
 
+>本类用于自定义弹框 只需要将customView赋值给ContentView即可
 
-## Installation
+* LLAlertViewAnimation
+
+###具体使用可详见demo
+
+
+
+## <a id="add"></a>如何添加
+
 
 LLKit is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
