@@ -5,7 +5,10 @@ target 'LLKit_Example' do
 
   target 'LLKit_Tests' do
     inherit! :search_paths
-
     
   end
+
+pod 'Toast', '~> 3.0'
+pod 'MBProgressHUD', '~> 0.9.1'
+
 end

@@ -1,16 +1,24 @@
 PODS:
-  - LLKit (1.0.2)
+  - LLKit (1.0.2):
+    - MBProgressHUD (~> 0.9.1)
+    - Toast (~> 3.0)
+  - MBProgressHUD (0.9.2)
+  - Toast (3.1.0)
 
 DEPENDENCIES:
   - LLKit (from `../`)
+  - MBProgressHUD (~> 0.9.1)
+  - Toast (~> 3.0)
 
 EXTERNAL SOURCES:
   LLKit:
     :path: ../
 
 SPEC CHECKSUMS:
-  LLKit: 73ec1a47b1967181509d9711883d5cc39f25f775
+  LLKit: b8f8bcf4b848d672a006a72b5f139a58da1d0e52
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
 
-PODFILE CHECKSUM: e3429acf9092d4db519cfa7a4e22d0c7952c57b7
+PODFILE CHECKSUM: 2da433c2cf0ea218d91c88ee53ba0456d3fc4b47
 
 COCOAPODS: 1.2.1

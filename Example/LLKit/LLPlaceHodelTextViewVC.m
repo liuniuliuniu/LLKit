@@ -12,7 +12,6 @@
 @interface LLPlaceHodelTextViewVC ()
 
 
-
 @end
 
 @implementation LLPlaceHodelTextViewVC
@@ -22,7 +21,7 @@
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     LLPlaceholderTextView *textView= [[LLPlaceholderTextView alloc]init];
-    textView.frame = CGRectMake(100, 100, 200, 200);
+    textView.frame = CGRectMake(100, 100, 200, 100);
     textView.font = [UIFont systemFontOfSize:20];
     textView.placeholderString = @"反馈内容";
     // 动态更改高度

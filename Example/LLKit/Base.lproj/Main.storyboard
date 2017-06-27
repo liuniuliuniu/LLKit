@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A2323a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qpC-aI-gbN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A2323a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qpC-aI-gbN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -150,12 +150,66 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4I-cH-1K8">
-                                <rect key="frame" x="108" y="231" width="158" height="76"/>
+                                <rect key="frame" x="16" y="72" width="343" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.56705720008158322" green="1" blue="0.046970110660648046" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title=" show CustomView"/>
                                 <connections>
                                     <action selector="showCunstomV:" destination="j3E-Y0-jmn" eventType="touchUpInside" id="DV4-FB-XoC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00R-0l-6ki">
+                                <rect key="frame" x="16" y="141" width="343" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.56705720010000005" green="1" blue="0.046970110660000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title=" show hud"/>
+                                <connections>
+                                    <action selector="showhud:" destination="j3E-Y0-jmn" eventType="touchUpInside" id="PdQ-ho-lw3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkn-Xs-gBS">
+                                <rect key="frame" x="16" y="212" width="343" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.56705720010000005" green="1" blue="0.046970110660000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="showToastWithText"/>
+                                <connections>
+                                    <action selector="showToastWithText" destination="j3E-Y0-jmn" eventType="touchUpInside" id="RVa-FD-NJe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aL1-es-7js">
+                                <rect key="frame" x="16" y="285" width="343" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.56705720010000005" green="1" blue="0.046970110660000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="showToastWithTextDelay"/>
+                                <connections>
+                                    <action selector="showToastWithDelay:" destination="j3E-Y0-jmn" eventType="touchUpInside" id="QbW-pm-mtm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcK-sm-lwg">
+                                <rect key="frame" x="16" y="355" width="343" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.56705720010000005" green="1" blue="0.046970110660000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="showToastWithTextConfirm-1"/>
+                                <connections>
+                                    <action selector="showAlertWithTitle:" destination="j3E-Y0-jmn" eventType="touchUpInside" id="uKj-6y-p4W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2d-bq-Tgt">
+                                <rect key="frame" x="16" y="422" width="343" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.56705720010000005" green="1" blue="0.046970110660000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="showToastWithTextConfirm-2"/>
+                                <connections>
+                                    <action selector="showToastWithTextConfirm2:" destination="j3E-Y0-jmn" eventType="touchUpInside" id="rWN-5X-MjB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyM-B8-KXv">
+                                <rect key="frame" x="16" y="489" width="343" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.56705720010000005" green="1" blue="0.046970110660000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="showToastWithTextConfirm-WithCancel"/>
+                                <connections>
+                                    <action selector="showAlertWithTitleWithCancel:" destination="j3E-Y0-jmn" eventType="touchUpInside" id="jo6-aP-eRL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -164,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iX3-M6-kRk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1834.4000000000001" y="944.97751124437787"/>
+            <point key="canvasLocation" x="1735" y="885"/>
         </scene>
         <!--Place Hodel Text ViewVC-->
         <scene sceneID="TYM-LI-Cde">

@@ -15,6 +15,7 @@
 #import "LLKit.h"
 #import "LLLabel.h"
 #import "LLPlaceholderTextView.h"
+#import "UIView+Alert.h"
 
 FOUNDATION_EXPORT double LLKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char LLKitVersionString[];

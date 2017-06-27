@@ -13,5 +13,6 @@
 #import "LLClickButton.h"
 #import "LLPlaceholderTextView.h"
 #import "LLAlertViewAnimation.h"
+#import "UIView+Alert.h"
 
 #endif /* LFBTools_h */

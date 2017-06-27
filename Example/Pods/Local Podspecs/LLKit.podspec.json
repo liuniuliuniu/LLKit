@@ -18,5 +18,13 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "LLKit/Classes/**/*"
+  "source_files": "LLKit/Classes/**/*",
+  "dependencies": {
+    "Toast": [
+      "~> 3.0"
+    ],
+    "MBProgressHUD": [
+      "~> 0.9.1"
+    ]
+  }
 }
